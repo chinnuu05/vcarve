@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /tos.html
+Disallow: /privacy.html
+
+# Sitemap location
+Sitemap: https://vcarveconstructions.com/sitemap.xml
