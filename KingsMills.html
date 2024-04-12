@@ -26,7 +26,6 @@ $(function(){
         <div class="row mt-5">
     <div class="col-lg-5 mt-5">
         <div style="width: 90%;" class="container">
-            <p class="text-muted"><i>For information regarding lease opportunities concering this plaza, please contact: 937-546-5687</i></p>
 
             <table class="table table-striped mt-5">
                 <tbody>
@@ -74,30 +73,25 @@ $(function(){
             </table>
         </div>
     </div>
+
+
     <div class="col-lg-7 mt-5">
         <div class="container">
-            <img class="display-pic-fixed" id="displayedPic" style="width: 90%" src="../img/Gallery/KingsMills/FinishedProject.jpg" />
-
+            <img class="img-fluid" style="object-fit: cover; height: auto;" id="displayedPic" src="img/Gallery/KingsMills/FinishedProject.jpg" alt="Kings Mills Finished Project"/>
+    
             <style>
-                /* Projects */
+                /* Adjust the gallery thumbnail styles */
                 .gallery-thumbnail {
                     cursor: pointer;
                     width: 120px;
-                    height: 100px;
+                    height: 100px;  /* You might consider making these dimensions proportional */
+                    object-fit: cover; /* Ensures the content is sized to maintain its aspect ratio while filling the element’s content box */
                 }
-                
                 .gallery-thumbnail:hover {
-                
                     opacity: 0.8;
-                    
-                }
-                
-                .display-pic-fixed {
-                    width: 200px;
-                    height: 400px;
                 }
             </style>
-
+    
             <script>
                 function ChangePic(element) {
                     document.getElementById("displayedPic").src = element.src;
@@ -105,19 +99,18 @@ $(function(){
             </script>
             
             <hr/>
-
+    
             <div style="width: 80%;" class="container">
                 <div class="row mt-3">
-
                     <div class="col-lg-3">
-                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="../img/Gallery/KingsMills/FinishedProject.jpg" />
+                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/Gallery/KingsMills/FinishedProject.jpg" alt="Thumbnail for Kings Mills Finished Project" />
                     </div>
-
                 </div>
             </div>
-
         </div>
     </div>
+    
+
 </div>
 
     
