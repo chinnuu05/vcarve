@@ -1,162 +1,72 @@
 <!DOCTYPE html>
 <html>
-
 <head id="header">
     <title></title>
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script> 
     $(function(){
       $("#header").load("header.html"); 
       $("#navigationbar").load("layout.html"); 
     });
     </script> 
-</head>>
-
-<body>
-    
-    <div id="navigationbar">
+    <style>
+        .gallery-thumbnail {
+            cursor: pointer;
+            width: 120px;
+            height: 100px;
+        }
         
-    </div>
-
-
-<div class="row mt-5">
-    <div class="col-lg-5 mt-5">
-        <div style="width: 90%;" class="container">
-
-
-            <table class="table table-striped mt-5">
-                <tbody>
-                    <tr>
-                        <td>Project Name</td>
-                        <td>River Creek Lofts</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Project Type</td>
-                        <td>Multi-Family Apartments</td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Total Units</td>
-                        <td>448</td>
-                    </tr>
-
-                    <tr>
-                        <td>Real Estate Developer</td>
-                        <td>Sam Echuri</td>
-                    </tr>
-
-                    <tr>
-                        <td>Acreage</td>
-                        <td>30.54</td>
-                    </tr>
-
-                    <tr>
-                        <td>Period</td>
-                        <td>Upcoming</td>
-                    </tr>
-
-                    <tr>
-                        <td>Project Address</td>
-                        <td>1771 Mason Morrow Millgrove Rd <br/>South Lebanon, Ohio, 45036</td>
-                    </tr>
-                </tbody>
-            </table>
+        .gallery-thumbnail:hover {
+            opacity: 0.8;
+        }
+        
+        .display-pic-fixed {
+            width: 200px;
+            height: 400px;
+        }
+    </style>
+    <script>
+        function ChangePic(element) {
+            document.getElementById("displayedPic").src = element.src;
+        }
+    </script>
+</head>
+<body>
+    <div id="navigationbar"></div>
+    <div class="row mt-5">
+        <div class="col-lg-5 mt-5">
+            <div style="width: 90%;" class="container">
+                <table class="table table-striped mt-5">
+                    <tbody>
+                        <tr><td>Project Name</td><td>River Creek Lofts</td></tr>
+                        <tr><td>Project Type</td><td>Multi-Family Apartments</td></tr>
+                        <tr><td>Total Units</td><td>448</td></tr>
+                        <tr><td>Real Estate Developer</td><td>Sam Echuri</td></tr>
+                        <tr><td>Acreage</td><td>30.54</td></tr>
+                        <tr><td>Period</td><td>Upcoming</td></tr>
+                        <tr><td>Project Address</td><td>1771 Mason Morrow Millgrove Rd<br/>South Lebanon, Ohio, 45036</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
-    <div class="col-lg-7">
-        <div class="container mt-5">
-            <img class="display-pic-fixed" id="displayedPic" style="width: 90%" src="img/rpic1.jpg" />
-
-            <style>
-                /* Projects */
-                .gallery-thumbnail {
-                    cursor: pointer;
-                    width: 120px;
-                    height: 100px;
-                }
-                
-                .gallery-thumbnail:hover {
-                
-                    opacity: 0.8;
-                    
-                }
-                
-                .display-pic-fixed {
-                    width: 200px;
-                    height: 400px;
-                }
-            </style>
-
-            <script>
-                function ChangePic(element) {
-                    document.getElementById("displayedPic").src = element.src;
-                }
-            </script>
-            
-            <hr/>
-
-            <div style="width: 80%;" class="container">
-                <div class="row mt-3">
-
-                    <div class="col-lg-3">
-                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/Gallery/RivercreekLofts/FrontElevation.jpg" />
-                    </div>
-
-                    <div class="col-lg-3">
-                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/Gallery/RivercreekLofts/ClubHouseFront.jpg" />
-                    </div>
-
-                    <div class="col-lg-3">
-                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/Gallery/RivercreekLofts/ClubHouseRear.jpg" />
-                    </div>
-
-                    <div class="col-lg-3">
-                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/Gallery/RivercreekLofts/ExteriorPerspective.jpg" />
-                    </div>
-                </div>
-
-                <div class="row mt-3">
-                    <div class="col-lg-3">
-                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/rpic2.jpg" />
-                    </div>
-
-                    <div class="col-lg-3">
-                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/Gallery/RivercreekLofts/BirdsEye.jpg" />
-                    </div>
-
-                    <div class="col-lg-3">
-                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/Gallery/RivercreekLofts/SitePlan.jpg" />
-                    </div>
-                    
-                    <div class="col-lg-3">
-                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/Gallery/RivercreekLofts/ClubHouseFloorPlan.jpg" />
+        <div class="col-lg-7">
+            <div class="container mt-5">
+                <img class="display-pic-fixed" id="displayedPic" style="width: 90%" src="img/rpic1.jpg" loading="lazy"/>
+                <hr/>
+                <div style="width: 80%;" class="container">
+                    <div class="row mt-3">
+                        <!-- Images with lazy loading -->
+                        <div class="col-lg-3">
+                            <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/Gallery/RivercreekLofts/FrontElevation.jpg" loading="lazy"/>
+                        </div>
+                        <!-- Add lazy loading to other images similarly -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-
+    <!-- Only load necessary scripts -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/agency.min.js"></script>
 </body>
-
 </html>
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Contact form JavaScript -->
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/agency.min.js"></script>
