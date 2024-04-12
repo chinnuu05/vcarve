@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head id="header">
+<title></title>
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#navigationbar").load("layout.html"); 
+});
+</script> 
+</head>
+
+<body>
+    
+    <div id="navigationbar">
+        
+    </div>
+
+ 
+    <div>
+        <div class="row mt-5">
+    <div class="col-lg-5 mt-5">
+        <div style="width: 90%;" class="container">
+            <p class="text-muted"><i>For information regarding lease opportunities concering this plaza, please contact: 937-546-5687</i></p>
+
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <td>Project Name</td>
+                        <td>Rivers Bend Plaza</td>
+                    </tr>
+
+                    <tr>
+                        <td>Real Estate Developer</td>
+                        <td>Sam Echuri</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Sq. Ft.</td>
+                        <td>8,574</td>
+                    </tr>
+
+                    <tr>
+                        <td>Acreage</td>
+                        <td>1.03</td>
+                    </tr>
+
+                    <tr>
+                        <td>Period</td>
+                        <td>2014 - 2015</td>
+                    </tr>
+
+                    <tr>
+                        <td>Project Address</td>
+                        <td>5970 State Route 48, Maineville, Ohio</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tenants</td>
+                        <td>
+                            Rivers Bend State Liquor<br />
+                            Verizon<br />
+                            Supercuts<br />
+                            Jersey Mikes<br />
+                            Dunkin Donuts<br />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-lg-7 mt-5">
+        <div class="container">
+            <img class="display-pic-fixed" id="displayedPic" style="width: 90%" src="img/Gallery/Riversbend/FinishedAngled.jpg" />
+
+            <style>
+                /* Projects */
+                .gallery-thumbnail {
+                    cursor: pointer;
+                    width: 120px;
+                    height: 100px;
+                }
+                
+                .gallery-thumbnail:hover {
+                
+                    opacity: 0.8;
+                    
+                }
+                
+                .display-pic-fixed {
+                    width: 200px;
+                    height: 400px;
+                }
+            </style>
+
+            <script>
+                function ChangePic(element) {
+                    document.getElementById("displayedPic").src = element.src;
+                }
+            </script>
+            
+            <hr/>
+
+            <div style="width: 80%;" class="container">
+                <div class="row mt-3">
+
+                    <div class="col-lg-3">
+                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/Gallery/Riversbend/FinishedAngled.jpg" />
+                    </div>
+
+                    <div class="col-lg-3">
+                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/Gallery/Riversbend/ConstructionFrame.JPG">
+                    </div>
+
+                    <div class="col-lg-3">
+                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/Gallery/Riversbend/UnderConstruction.JPG" />
+                    </div>
+
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-lg-3">
+                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/Gallery/Riversbend/ConstructionBeginning.JPG" />
+                    </div>
+
+                    <div class="col-lg-3">
+                        <img onclick="ChangePic(this)" class="gallery-thumbnail" src="img/Gallery/Riversbend/Groundwork.JPG">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Contact form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/agency.min.js"></script>
