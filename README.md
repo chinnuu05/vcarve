@@ -1,1 +1,1 @@
-[whale](/img/KingsMills.jpg)
+![whale](/img/KingsMills.jpg)
