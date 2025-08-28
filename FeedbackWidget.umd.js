@@ -28,7 +28,7 @@
 }
 
 ._feedbackText_7d9c4_25 {
-    font-size: 1;
+    font-size: 15px;
     line-height: 1.4;
     font-weight: 500;
 }
