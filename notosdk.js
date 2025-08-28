@@ -7,7 +7,7 @@ var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "sy
     class Notofox {
       constructor() {
         // This will be set dynamically based on which widget is being loaded
-        __publicField(this, "widgetSrc", "/FeedbackWidget.umd.js");
+        __publicField(this, "widgetSrc", "https://vcarveconstructions.com/FeedbackWidget.umd.js");
         console.log("[+] Notofox SDK initialized.");
         console.log("[+] Widget source:", this.widgetSrc);
       }
