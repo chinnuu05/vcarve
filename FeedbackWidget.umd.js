@@ -30458,6 +30458,10 @@ html, body {
       link.rel = "stylesheet";
       link.href = "https://vcarveconstructions.com/FeedbackWidget.umd.css";
       shadow.appendChild(link);
+      const mantineLink = document.createElement("link");
+      mantineLink.rel = "stylesheet";
+      mantineLink.href = "https://unpkg.com/@mantine/core@7.4.2/styles.css";
+      document.head.appendChild(mantineLink);
       if (!widgetRoot) {
         widgetRoot = ReactDOM$1.createRoot(mount);
         console.log("[+] Creating new window.React root called: " + containerId);
